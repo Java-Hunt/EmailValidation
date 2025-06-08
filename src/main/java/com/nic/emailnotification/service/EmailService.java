@@ -22,6 +22,7 @@ public class EmailService {
 	    public void sendWelcomeEmail(String to, String name) {
 	        Context context = new Context();
 	        context.setVariable("name", name);
+	        System.out.println(context);
 
 	        String processHtml = templateEngine.process("welcome-email", context);
 
